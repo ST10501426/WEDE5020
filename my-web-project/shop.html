@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shop | Paradox Store</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR - Contains logo and main menu links -->
+    <header class="navbar">
+        <img src="images/Logo.png" alt="Paradox Logo" class="navbar-logo"/>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop Apparel</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- PAGE HEADER - Title and description for shop page -->
+    <section class="page-header">
+        <h1>Shop Our Collection</h1>
+        <p>Discover our premium selection of apparel and accessories</p>
+    </section>
+
+    <!-- FILTER SECTION - Category and price range filters for products -->
+    <section class="shop-filters">
+        <div class="filter-container">
+            <h3>Filter By</h3>
+            <div class="filter-group">
+                <label><input type="checkbox" class="category-filter" value="tshirts"> T-Shirts</label>
+                <label><input type="checkbox" class="category-filter" value="hoodies"> Hoodies</label>
+                <label><input type="checkbox" class="category-filter" value="accessories"> Accessories</label>
+                <label><input type="checkbox" class="category-filter" value="limited"> Limited Edition</label>
+            </div>
+            <div class="filter-group">
+                <label>Price Range</label>
+                <div class="price-range-wrapper">
+                    <input type="range" id="priceRange" class="price-slider" min="0" max="2000" value="2000" />
+                    <div class="price-display">
+                        <span>R0</span>
+                        <span id="priceValue">R2000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - Main product display area with filtering functionality -->
+    <!-- Includes: T-Shirts, Hoodies, Caps, Bags, and Coming Soon items -->
+    <section class="products">
+        <div class="product-grid" id="productGrid">
+            <div class="product-card" data-price="299.99" data-category="tshirts">
+                <div class="tshirt-image-container">
+                    <img src="images/T-shirt/Black-T-shirt.png.jpeg" alt="Atomic Gengar T-Shirt" class="tshirt-img" />
+                </div>
+                <h3>Atomic Gengar T-Shirt</h3>
+                <p class="price">R299.99</p>
+                <p class="description">Premium cotton t-shirt with exclusive Atomic Gengar design</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="599.99" data-category="hoodies">
+                <div class="hoodie-image-container">
+                    <img src="images/hoodie/Hoodie-front.png.jpeg" alt="Paradox Hoodie - Front" class="hoodie-front" />
+                    <img src="images/hoodie/Hoodie-back.png.jpeg" alt="Paradox Hoodie - Back" class="hoodie-back" />
+                </div>
+                <h3>Paradox Hoodie</h3>
+                <p class="price">R599.99</p>
+                <p class="description">Comfortable hoodie perfect for any season</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="249.99" data-category="accessories">
+                <div class="cap-image-container">
+                    <img src="images/caps/Cap-Front.png.jpeg" alt="Paradox Logo Cap - Front" class="cap-front" />
+                    <img src="images/caps/Cap-Side.png.jpeg" alt="Paradox Logo Cap - Side" class="cap-side" />
+                </div>
+                <h3>Paradox Logo Cap</h3>
+                <p class="price">R249.99</p>
+                <p class="description">Classic cap with embroidered Paradox logo</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="499.99" data-category="hoodies">
+                <div class="coming-soon-container">
+                    <span class="coming-soon-text">Coming Soon</span>
+                </div>
+                <h3>Crew Neck Sweatshirt</h3>
+                <p class="price">R499.99</p>
+                <p class="description">Soft and cozy sweatshirt for everyday wear</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="349.99" data-category="accessories">
+                <div class="bag-image-container">
+                    <img src="images/bags/Tote-bag.png.jpeg" alt="Premium Tote Bag" class="bag-img" />
+                </div>
+                <h3>Premium Tote Bag</h3>
+                <p class="price">R349.99</p>
+                <p class="description">Durable tote bag perfect for daily use</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="899.99" data-category="limited">
+                <div class="coming-soon-container">
+                    <span class="coming-soon-text">Coming Soon</span>
+                </div>
+                <h3>Limited Edition Jacket</h3>
+                <p class="price">R899.99</p>
+                <p class="description">Exclusive limited edition jacket - only 100 pieces available</p>
+                <button class="btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div id="noProducts" class="no-products" style="display: none;">
+            <p>No products found in this price range.</p>
+        </div>
+    </section>
+    </main>
+
+    <!-- FOOTER - Site links, branding, and social media -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Paradox</h4>
+                <p>Premium apparel and accessories for the modern individual.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Paradox. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT - Handles product filtering and cart functionality -->
+    <script src="js/script.js"></script>
+</body>
+</html>

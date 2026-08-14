@@ -1,0 +1,12 @@
+# Robots.txt for Paradox Store
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Specify sitemap location
+Sitemap: https://paradoxstore.com/sitemap.xml

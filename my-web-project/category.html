@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Categories | Paradox Store</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR - Contains logo and main menu links -->
+    <header class="navbar">
+        <img src="images/Logo.png" alt="Paradox Logo" class="navbar-logo"/>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop Apparel</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- PAGE HEADER - Title and description for categories page -->
+    <section class="page-header">
+        <h1>Shop by Category</h1>
+        <p>Browse our exclusive collections organized by category</p>
+    </section>
+
+    <!-- CATEGORIES GRID - Product categories: T-Shirts, Hoodies, Accessories, etc. -->
+    <!-- Each category card links to filtered shop view -->
+    <section class="categories-container">
+        <div class="category-card">
+            <img src="images/T-shirt/Black-T-shirt.png.jpeg" alt="T-Shirts" />
+            <h2>T-Shirts</h2>
+            <p>Classic and contemporary t-shirt designs</p>
+            <p class="product-count">15 Products</p>
+            <a href="shop.html?category=tshirts" class="btn-secondary">Browse Collection</a>
+        </div>
+
+        <div class="category-card">
+            <img src="images/hoodie/Hoodie-front.png.jpeg" alt="Hoodies" />
+            <h2>Hoodies</h2>
+            <p>Cozy hoodies perfect for any occasion</p>
+            <p class="product-count">12 Products</p>
+            <a href="shop.html?category=hoodies" class="btn-secondary">Browse Collection</a>
+        </div>
+
+        <div class="category-card">
+            <div class="coming-soon-container">
+                <span class="coming-soon-text">Coming Soon</span>
+            </div>
+            <h2>Jackets</h2>
+            <p>Stylish and durable jacket collection</p>
+            <p class="product-count">8 Products</p>
+            <a href="shop.html?category=jackets" class="btn-secondary">Browse Collection</a>
+        </div>
+
+        <div class="category-card">
+            <div class="category-accessories-container">
+                <img src="images/caps/Cap-Front.png.jpeg" alt="Accessories" class="category-cap" />
+                <img src="images/bags/Tote-bag.png.jpeg" alt="Accessories" class="category-bag" />
+            </div>
+            <h2>Accessories</h2>
+            <p>Complete your look with our accessories</p>
+            <p class="product-count">20 Products</p>
+            <a href="shop.html?category=accessories" class="btn-secondary">Browse Collection</a>
+        </div>
+
+        <div class="category-card">
+            <div class="coming-soon-container">
+                <span class="coming-soon-text">Coming Soon</span>
+            </div>
+            <h2>Limited Edition</h2>
+            <p>Exclusive and rare pieces available now</p>
+            <p class="product-count">5 Products</p>
+            <a href="shop.html?category=limited" class="btn-secondary">Browse Collection</a>
+        </div>
+
+        <div class="category-card">
+            <div class="coming-soon-container">
+                <span class="coming-soon-text">Coming Soon</span>
+            </div>
+            <h2>Best Sellers</h2>
+            <p>Most popular items loved by our customers</p>
+            <p class="product-count">10 Products</p>
+            <a href="shop.html?category=bestsellers" class="btn-secondary">Browse Collection</a>
+        </div>
+    </section>
+
+    <!-- SPECIAL OFFERS SECTION - Promotional offers and deals -->
+    <section class="category-promo">
+        <h2>Special Offers</h2>
+        <div class="promo-grid">
+            <div class="promo-card">
+                <h3>Summer Sale</h3>
+                <p>Get up to 30% off on summer collection</p>
+                <a href="shop.html" class="btn">Shop Sale</a>
+            </div>
+            <div class="promo-card">
+                <h3>New Arrivals</h3>
+                <p>Check out our latest designs</p>
+                <a href="shop.html" class="btn">View New</a>
+            </div>
+            <div class="promo-card">
+                <h3>Bundle Deal</h3>
+                <p>Buy 2 items and get 15% off</p>
+                <a href="shop.html" class="btn">See Bundles</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- FOOTER - Site links, branding, and social media -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Paradox</h4>
+                <p>Premium apparel and accessories for the modern individual.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Paradox. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT - Handles category navigation and filtering -->
+    <script src="js/script.js"></script>
+</body>
+</html>
